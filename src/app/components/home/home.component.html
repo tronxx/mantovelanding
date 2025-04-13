@@ -1,0 +1,86 @@
+<div class="home-container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Meridiano60</h1>
+        <p>Soluciones catastrales precisas y eficientes para tus necesidades</p>
+        <button class="cta-button">Contáctanos</button>
+      </div>
+    </section>
+  
+    <section class="beneficios">
+      <h2>Beneficios de Elegir Meridiano60</h2>
+      <p class="beneficios-descripcion">Nuestros servicios están diseñados para ofrecerte soluciones rápidas, precisas y confiables.</p>
+      
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3>Eficiencia Garantizada</h3>
+          <p>Procesamos tus trámites catastrales de manera ágil y sin complicaciones.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <i class="fas fa-user-friends"></i>
+          </div>
+          <h3>Asesoría Personalizada</h3>
+          <p>Te guiamos en cada paso para que tomes las mejores decisiones.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>Precisión en los Datos</h3>
+          <p>Garantizamos la exactitud en todos los registros y documentos.</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="testimonios">
+      <h2>Testimonios</h2>
+      <div class="testimonios-grid">
+        <div *ngFor="let testimonio of testimonios" class="testimonio-card">
+          <div class="testimonio-contenido">
+            <p>"{{ testimonio.texto }}"</p>
+          </div>
+          <div class="testimonio-autor">
+            <h4>{{ testimonio.nombre }}</h4>
+            <p>{{ testimonio.puesto }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto-grid">
+        <div class="contacto-card">
+          <div class="contacto-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <h3>Horario de Atención</h3>
+          <p>Lunes a Viernes 8:00 am a 5:00 pm</p>
+        </div>
+        
+        <div class="contacto-card">
+          <div class="contacto-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Nuestra Dirección</h3>
+          <p>Calle 123, Mérida, Yucatán</p>
+        </div>
+        
+        <div class="contacto-card">
+          <div class="contacto-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Contáctanos</h3>
+          <p>+52-999-123-4567</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  
