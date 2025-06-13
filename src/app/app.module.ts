@@ -10,7 +10,7 @@ import { PrivacidadComponent } from './components/privacidad/privacidad.componen
 import { TerminosComponent } from './components/terminos/terminos.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'servicios', component: ServiciosComponent },

@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AccesoriosService } from '../../accesorios.service'
 
 @Component({
   selector: 'app-contact',
@@ -12,7 +13,11 @@ export class ContactComponent implements OnInit {
   submitted = false;
   isLoading = false;
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private accesoriosService : AccesoriosService
+  ) 
+    {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
@@ -37,6 +42,10 @@ export class ContactComponent implements OnInit {
     
     // Aquí iría la lógica para enviar el formulario
     console.log('Formulario enviado:', this.contactForm.value);
+    const data = JSON.stringify(this.contactForm.value);
+    this.accesoriosService.enviacorreo(data).subscribe(res => {
+      console.log("Se ha enviado el correo");
+    });
     
     // Simulamos un envío con timeout
     setTimeout(() => {
