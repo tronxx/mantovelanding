@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "meridiano60": {
+    "mantovelanding": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/meridiano60",
+            "outputPath": "dist/mantovelanding",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "meridiano60:build:production"
+              "browserTarget": "mantovelanding:build:production"
             },
             "development": {
-              "browserTarget": "meridiano60:build:development"
+              "browserTarget": "mantovelanding:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "meridiano60:build"
+            "browserTarget": "mantovelanding:build"
           }
         },
         "test": {
