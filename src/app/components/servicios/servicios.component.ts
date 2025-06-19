@@ -7,15 +7,24 @@ import { Component } from '@angular/core';
 })
 export class ServiciosComponent {
   servicios = [
-    {servicio: "✅ Planos catastrales en Mérida."},
-    {servicio: "✅ Planos catastrales en todo el Estado."},
-    {servicio: "✅ Actualización de Planos"},
-    {servicio: "✅ Tramitación Express: Evitas filas y errores. Nosotros agilizamos tu trámite (altas, bajas, cambios de propietario, rectificación de datos, etc.)."},
-    {servicio: "✅ Atención a las poblaciones del Estado)."},
-    {servicio: "✅ Seguimiento en Tiempo Real: Te actualizamos en cada etapa del proceso."},
-    {servicio: "✅ Precios Justos y Sin Sorpresas: Cotización clara desde el inicio (sin cargos ocultos)."},
-    {servicio: "✅ Conexiones Directas con el Catastro: Conocemos los procedimientos internos para evitar rechazos."},
-    {servicio: "✅ Modalidad Presencial o en Línea: Atendemos en oficina, a domicilio o vía WhatsApp/email."},
+    {servicio:"🚗 Registra tus vehículos, controla cada gasto y optimiza tu flotilla con Mantove."},
+
+    {servicio:"⛽ Reportes detallados de combustible: semanal, mensual y anual. ¡Toma el control!"},
+    
+    {servicio:"📊 Desde el kilometraje hasta el último litro de gasolina: todo registrado, todo bajo control."},
+    
+    {servicio:"💰 ¿Cuánto gastas en mantenimiento? Con Mantove, lo sabrás al instante."},
+    
+    {servicio:"📅 Reportes automáticos: analiza el rendimiento de tu flotilla en segundos."},
+    
+    {servicio:"🛠️ Mantenimiento, combustible y costos… ¡Todo en un solo dashboard!"},
+    
+    {servicio:"🔍 No más gastos ocultos. Monitorea cada detalle de tus vehículos con Mantove."},
+    
+    {servicio:"💡 La herramienta que necesitas para reducir costos y aumentar eficiencia."},
+    
+    {servicio:"✅ Prueba Mantove hoy y descubre cuánto puedes ahorrar."},
+    {servicio:"🔹 ¡Registra, analiza y ahorra con Mantove!"    },
   ]
 
 

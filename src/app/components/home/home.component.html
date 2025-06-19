@@ -1,15 +1,25 @@
 <div class="home-container">
     <section class="hero">
       <div class="hero-content">
-        <h1>Meridiano60</h1>
-        <p>Soluciones catastrales precisas y eficientes para tus necesidades</p>
+        <h1>Mantove</h1>
+        <p>Registro de Consumos de Combustibles y Mantenimientos de Flotilla Vehicular</p>
         <button class="cta-button">Contáctanos</button>
       </div>
     </section>
   
     <section class="beneficios">
-      <h2>Beneficios de Elegir Meridiano60</h2>
-      <p class="beneficios-descripcion">Nuestros servicios están diseñados para ofrecerte soluciones rápidas, precisas y confiables.</p>
+
+      <h2>Beneficios de Elegir Mantove</h2>
+      <div class="beneficios-descripcion">
+        <ul>
+          <li *ngFor="let servicio of beneficios">
+            <h3>{{ servicio.titulo }}</h3>
+            <p>{{ servicio.concepto }}</p> 
+          </li>
+        </ul>
+
+      </div>
+      
       
       <div class="servicios-grid">
         <div class="servicio-card">
@@ -17,14 +27,14 @@
             <i class="fas fa-tachometer-alt"></i>
           </div>
           <h3>Eficiencia Garantizada</h3>
-          <p>Procesamos tus trámites catastrales de manera ágil y sin complicaciones.</p>
+          <p>Procesos de manera ágil y sin complicaciones.</p>
         </div>
         
         <div class="servicio-card">
           <div class="servicio-icon">
             <i class="fas fa-user-friends"></i>
           </div>
-          <h3>Asesoría Personalizada</h3>
+          <h3>Manuales de Usuario</h3>
           <p>Te guiamos en cada paso para que tomes las mejores decisiones.</p>
         </div>
         
